@@ -31,6 +31,7 @@ spec:
           INTERNAL_API_SECRET={{ .Data.data.INTERNAL_API_SECRET }}
           PORT={{ .Data.data.PORT }}
           REDIS_URL={{ .Data.data.REDIS_URL }}
+          USER_SERVICE_HOST={{ .Data.data.USER_SERVICE_HOST }}
           REFRESH_TOKEN_EXP={{ .Data.data.REFRESH_TOKEN_EXP }}
           {{- end -}}
         vault.hashicorp.com/agent-inject-file-env.txt: ".env"
